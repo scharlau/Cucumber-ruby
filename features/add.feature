@@ -1,11 +1,11 @@
-Feature: Addition
+Feature: Create
   In order to avoid silly mistakes
-  As a math idiot 
-  I want to be told the sum of two numbers
+  As a sailor
+  I want to be told the details of the boat
 
-  Scenario: Add two numbers
-    Given I visit the calculator page
-    And I fill in '50' for 'first'
-    And I fill in '70' for 'second'
-    When I press 'Add'
-    Then I should see 'Answer: 120'
+  Scenario: Create a new boat
+    Given I create a boat
+    And I fill in 'Ruby' for 'name'
+    And I fill in 'red' for 'colour'
+    When I check the boat details
+    Then I should see 'Ruby'

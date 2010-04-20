@@ -3,6 +3,8 @@
 # added reader/writer accessor value
 # adding class values
 
+# this is the same class as in RubyBasics, without the extra puts statements
+
 class Boat
   @@boats = 0;
   attr_accessor :name, :length, :colour
@@ -17,8 +19,6 @@ class Boat
   
   def boat_count
    @@boats +=1
-   puts "There are now #@@boats boats in play"
-   puts "I\'m " + self.to_s
   end
   
   # override the to_s method with our own version
@@ -54,14 +54,3 @@ end
 
 boat = Boat.new("Sunrise",20, "blue")
 sail = SailBoat.new("Puffin",20,"blue/white",2)
-#boat.boat_count
-puts boat.inspect.to_s
-puts sail.sail_class
-sail.sail_class = 23
-puts sail.sail_class
-puts sail.inspect.to_s
-puts sail.name  + " has " + sail.sails.to_s + " sails and is " 
-puts sail.length.to_s + " feet long and " + sail.colour
-# let's print out the boat
-puts boat.to_s
-puts sail.to_s
