@@ -1,5 +1,10 @@
+require 'boat'
+require 'test/unit/assertions'
+World(Test::Unit::Assertions)
+
 Given /^I create a boat$/ do
-  pending # express the regexp above with the code you wish you had
+  boat = Boat.new
+  assert_equal("Sunrise", boat.name)
 end
 
 Given /^I fill in 'Ruby' for 'name'$/ do
