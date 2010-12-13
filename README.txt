@@ -1,3 +1,2 @@
 This is a simple example of what a cucumber setup should look like for a ruby app without rails.
-From this initial setup you should be able to add new features and work through their implementation
-with everything passing tests.
+From this initial setup you should be able to add new features and work through their implementation with everything passing tests.
